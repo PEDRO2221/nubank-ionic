@@ -1,0 +1,66 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <span class="ion-text-center">
+      Olá, João
+    </span>
+    <ion-button slot="end" size="" fill="clear" color="light">
+      <ion-icon name="eye-off-outline"></ion-icon>
+    </ion-button>
+    <ion-button slot="end" size="" fill="clear" color="light">
+      <ion-icon name="settings-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding" color="primary">
+  <div class="backgroud">
+    <div class="bank-information ion-text-center">
+      <img src="assets/qr.jpg" alt="" class="qrcode">
+      <span>Agência <strong>0001 Conta 1213123-4</strong> </span>
+      <span>Banco <strong>202 - Nu Pagamentos S.A.</strong> </span>
+    </div>
+  </div>
+  <div class="blocks">
+    <ion-card>
+      <ion-item class="ion-margin-vertical" lines="none">
+        <ion-icon slot="start" name="card-outline"></ion-icon>
+        <ion-label>Cartão de crédito</ion-label>
+      </ion-item>
+      <ion-card-content  class="ion-no-padding ion-margin-vertical">
+        <div class="cash ion-padding">
+          <span class="blue">Fatura atual</span>
+          <span class="blue value">R$ 57,55</span>
+          <span>Limite disponivel <span class="green">R$ 2942,45</span></span>
+        </div>
+
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-item  class="ion-margin-vertical" lines="none">
+        <ion-icon slot="start" name="wallet-outline"></ion-icon>
+        <ion-label><span>Conta</span></ion-label>
+      </ion-item>
+      <ion-card-content class="ion-no-padding ion-margin-vertical">
+        <div class="valor acount ion-padding">
+          <span>Saldo disponivel</span>
+          <ion-text color="dark">
+            <span>R$ 197,51</span>
+          </ion-text>
+        </div>
+
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-slides [options]="slideOptions">
+      <ion-slide *ngFor="let options of options">
+        <div class="container ion-text-left">
+          <ion-icon [name]="options.icon"></ion-icon>
+          <span>{{options.text}}</span>
+        </div>
+
+      </ion-slide>
+    </ion-slides>
+  </ion-toolbar>
+</ion-footer>
