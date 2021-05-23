@@ -38,7 +38,14 @@ ion-content{
   display: none;
 }
 .blocks{
+ 
   ion-card{
+    .title{
+      font-size: 20px;
+    }
+    .icon{
+      font-size: 30px;
+    }
       .cash{
         span{
           &.value{
