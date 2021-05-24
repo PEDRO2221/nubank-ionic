@@ -1,4 +1,6 @@
+import { ModalController } from '@ionic/angular';
 import { Component } from '@angular/core';
+import {ModalconfPage} from '../modalconf/modalconf.page';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  constructor(private modalController:ModalController) { }
+OpenModal(){
+  this.modalController.create({component:ModalconfPage}).then((modalElement)=>{
+    modalElement.present();
+  })
+}
+
   public options: Array<any> = [
     { icon: "barcode-outline", text: "Pagar" },
     { icon: "person-add-outline", text: "Indicar amigos" },
@@ -19,9 +28,4 @@ export class HomePage {
     { icon: "help-circle-outline", text: "Me ajuda" },
   ];
   public slideOptions: any = { slidesPerView: 3, freeMode: true };
-
-
-
-constructor() { }
-
 }

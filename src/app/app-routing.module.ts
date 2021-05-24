@@ -10,7 +10,11 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'modalconf',
+    loadChildren: () => import('./modalconf/modalconf.module').then( m => m.ModalconfPageModule)
   },
+
 ];
 
 @NgModule({
