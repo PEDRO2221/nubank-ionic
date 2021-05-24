@@ -1,0 +1,30 @@
+ion-header{
+    padding: 0px;
+    border: 0px;
+    vertical-align: middle;
+    ion-toolbar{
+    span{
+      margin-left: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      vertical-align: middle;
+      font-size: 35px;
+      border-left: 40px;
+      ion-button{
+        border-right: 90%;
+        border-radius: 50%;
+        display: inline;
+        }
+     }
+    }
+  }
+  ion-content{
+      ion-list{
+          background-color: #b601b6;
+        span{
+            display: block;
+            margin: 5px 0;
+            font-size: 20px;
+          }
+      }
+        
+      }

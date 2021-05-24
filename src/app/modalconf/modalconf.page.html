@@ -1,5 +1,21 @@
-<ion-content>
-  <ion-button (click)="CloseModal()">
-    Fechar
-  </ion-button>
+<ion-header  class="ion-no-border">
+  <ion-toolbar color="primary">
+    <span class="ion-text-center">
+      Olá, João
+    </span>
+    <ion-button slot="end" size="" fill="clear" color="light" (click)="CloseModal()">
+      <ion-icon name="close-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content color="primary">
+  
+  <ion-list class="list ion-padding ion-margin-vertical ion-text-center">
+      <span>Agência <strong>0001 Conta 1213123-4</strong> </span>
+      <span>Banco <strong>202 - Nu Pagamentos S.A.</strong> </span>
+    <ion-item *ngFor="let option of options" >
+      <ion-icon slot="start" [name]="option.icon"></ion-icon>
+      <ion-label> {{option.text}} </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
