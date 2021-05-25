@@ -2,17 +2,17 @@ import { ModalController } from '@ionic/angular';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-indicar-amigos',
-  templateUrl: './indicar-amigos.page.html',
-  styleUrls: ['./indicar-amigos.page.scss'],
+  selector: 'app-deposit',
+  templateUrl: './deposit.page.html',
+  styleUrls: ['./deposit.page.scss'],
 })
-export class IndicarAmigosPage implements OnInit {
+export class DepositPage implements OnInit {
 
   constructor(private modalController:ModalController) { }
 
   ngOnInit() {
   }
-  CloseAmigos(){
+  CloseDeposit(){
     this.modalController.dismiss();
   }
 

@@ -1,8 +1,16 @@
+import { TransferirPage } from './../transferir/transferir.page';
+import { EmprestimoPage } from './../emprestimo/emprestimo.page';
+import { BloquearcartaoPage } from './../bloquearcartao/bloquearcartao.page';
+import { AjudaPage } from './../ajuda/ajuda.page';
 import { ModalController } from '@ionic/angular';
 import { Component } from '@angular/core';
 import {ModalconfPage} from '../modalconf/modalconf.page';
 import { PagarPage } from '../pagar/pagar.page';
 import { IndicarAmigosPage } from '../indicar-amigos/indicar-amigos.page';
+import { DepositPage } from '../deposit/deposit.page';
+import { LimitePage } from '../limite/limite.page';
+import { RecargacelularPage } from '../recargacelular/recargacelular.page';
+import { CartaovirtualPage } from '../cartaovirtual/cartaovirtual.page';
 
 @Component({
   selector: 'app-home',
@@ -26,6 +34,46 @@ OpenAmigos(){
     modalElement.present();
   })
 }
+OpenAjuda(){
+  this.modalController.create({component:AjudaPage}).then((modalElement)=>{
+    modalElement.present();
+  })
+}
+OpenBloquear(){
+  this.modalController.create({component:BloquearcartaoPage}).then((modalElement)=>{
+    modalElement.present();
+  })
+}
+OpenDeposit(){
+  this.modalController.create({component:DepositPage}).then((modalElement)=>{
+    modalElement.present();
+  })
+}
+OpenEmprestimo(){
+  this.modalController.create({component:EmprestimoPage}).then((modalElement)=>{
+    modalElement.present();
+  })
+}
+OpenLimite(){
+  this.modalController.create({component:LimitePage}).then((modalElement)=>{
+    modalElement.present();
+  })
+}
+OpenCartao(){
+  this.modalController.create({component:CartaovirtualPage}).then((modalElement)=>{
+    modalElement.present();
+  })
+}
+OpenRecarregar(){
+  this.modalController.create({component:RecargacelularPage}).then((modalElement)=>{
+    modalElement.present();
+  })
+}
+OpenTransferir(){
+  this.modalController.create({component:TransferirPage}).then((modalElement)=>{
+    modalElement.present();
+  })
+}
   
   public options: Array<any> = [
     { icon: "barcode-outline", text: "Pagar",rota :1},
@@ -46,21 +94,21 @@ OpenAmigos(){
       break;
       case 2 : this.OpenAmigos();
       break;
-      case 3 : this.OpenModal();
+      case 3 : this.OpenTransferir();
       break;
-      case 4 : this.OpenModal();
+      case 4 : this.OpenDeposit();
       break;
-      case 5 : this.OpenModal();
+      case 5 : this.OpenEmprestimo();
       break;
-      case 6 : this.OpenModal();
+      case 6 : this.OpenCartao();
       break;
-      case 7 : this.OpenModal();
+      case 7 : this.OpenRecarregar();
       break;
-      case 8 : this.OpenModal();
+      case 8 : this.OpenBloquear();
       break;
-      case 9 : this.OpenModal();
+      case 9 : this.OpenLimite();
       break;
-      case 0 : this.OpenModal();
+      case 0 : this.OpenAjuda();
       break;
     }
   }

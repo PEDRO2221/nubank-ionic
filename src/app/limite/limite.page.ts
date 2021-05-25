@@ -2,17 +2,17 @@ import { ModalController } from '@ionic/angular';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-indicar-amigos',
-  templateUrl: './indicar-amigos.page.html',
-  styleUrls: ['./indicar-amigos.page.scss'],
+  selector: 'app-limite',
+  templateUrl: './limite.page.html',
+  styleUrls: ['./limite.page.scss'],
 })
-export class IndicarAmigosPage implements OnInit {
+export class LimitePage implements OnInit {
 
   constructor(private modalController:ModalController) { }
 
   ngOnInit() {
   }
-  CloseAmigos(){
+  CloseLimite(){
     this.modalController.dismiss();
   }
 

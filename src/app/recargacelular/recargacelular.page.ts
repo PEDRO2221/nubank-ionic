@@ -2,17 +2,17 @@ import { ModalController } from '@ionic/angular';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-indicar-amigos',
-  templateUrl: './indicar-amigos.page.html',
-  styleUrls: ['./indicar-amigos.page.scss'],
+  selector: 'app-recargacelular',
+  templateUrl: './recargacelular.page.html',
+  styleUrls: ['./recargacelular.page.scss'],
 })
-export class IndicarAmigosPage implements OnInit {
+export class RecargacelularPage implements OnInit {
 
   constructor(private modalController:ModalController) { }
 
   ngOnInit() {
   }
-  CloseAmigos(){
+  CloseRecarregar(){
     this.modalController.dismiss();
   }
 
