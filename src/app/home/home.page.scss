@@ -9,12 +9,14 @@ ion-header{
     vertical-align: middle;
     font-size: 35px;
     border-left: 40px;
-    ion-button{
-      border-right: 90%;
-      border-radius: 50%;
-      display: inline;
-      }
+   
    }
+   ion-button{
+    border-right: 90%;
+    border-radius: 100%;
+    display: inline;
+    background-color: #7309b8;
+    }
   }
 }
 ion-content{

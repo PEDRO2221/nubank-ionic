@@ -67,8 +67,8 @@
   <ion-toolbar color="primary" class="ion-no-sargin ion-padding-vertical">
     <ion-slides [options]="slideOptions">
       <ion-slide *ngFor="let options of options">
-        <div class="container ion-text-left">
-          <ion-icon [name]="options.icon"></ion-icon>
+        <div class="container ion-text-left" (click)="navegateTo(options.rota)">
+            <ion-icon [name]="options.icon"></ion-icon>
           <span>{{options.text}}</span>
         </div>
 

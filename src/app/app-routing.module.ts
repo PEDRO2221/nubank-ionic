@@ -14,6 +14,10 @@ const routes: Routes = [
     path: 'modalconf',
     loadChildren: () => import('./modalconf/modalconf.module').then( m => m.ModalconfPageModule)
   },
+  {
+    path: 'pagar',
+    loadChildren: () => import('./pagar/pagar.module').then( m => m.PagarPageModule)
+  },
 
 ];
 
