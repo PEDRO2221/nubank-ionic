@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'pagar',
     loadChildren: () => import('./pagar/pagar.module').then( m => m.PagarPageModule)
   },
+  {
+    path: 'indicar-amigos',
+    loadChildren: () => import('./indicar-amigos/indicar-amigos.module').then( m => m.IndicarAmigosPageModule)
+  },
 
 ];
 

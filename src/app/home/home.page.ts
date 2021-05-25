@@ -2,6 +2,7 @@ import { ModalController } from '@ionic/angular';
 import { Component } from '@angular/core';
 import {ModalconfPage} from '../modalconf/modalconf.page';
 import { PagarPage } from '../pagar/pagar.page';
+import { IndicarAmigosPage } from '../indicar-amigos/indicar-amigos.page';
 
 @Component({
   selector: 'app-home',
@@ -15,8 +16,13 @@ OpenModal(){
     modalElement.present();
   })
 }
-Openpagar(){
+OpenPagar(){
   this.modalController.create({component:PagarPage}).then((modalElement)=>{
+    modalElement.present();
+  })
+}
+OpenAmigos(){
+  this.modalController.create({component:IndicarAmigosPage}).then((modalElement)=>{
     modalElement.present();
   })
 }
@@ -36,9 +42,9 @@ Openpagar(){
   public slideOptions: any = { slidesPerView: 3, freeMode: true };
   public navegateTo(rota){
     switch (rota){
-      case 1 : this.Openpagar();
+      case 1 : this.OpenPagar();
       break;
-      case 2 : this.OpenModal();
+      case 2 : this.OpenAmigos();
       break;
       case 3 : this.OpenModal();
       break;

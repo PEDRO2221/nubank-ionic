@@ -9,11 +9,12 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import {ModalconfPageModule} from './modalconf/modalconf.module';
 import {PagarPageModule} from './pagar/pagar.module';
+import {IndicarAmigosPageModule } from './indicar-amigos/indicar-amigos.module';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, ModalconfPageModule, PagarPageModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, ModalconfPageModule, PagarPageModule, IndicarAmigosPageModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
