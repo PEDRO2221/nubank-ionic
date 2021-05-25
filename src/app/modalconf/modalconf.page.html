@@ -8,14 +8,18 @@
     </ion-button>
   </ion-toolbar>
 </ion-header>
-<ion-content color="primary">
-  
-  <ion-list class="list ion-padding ion-margin-vertical ion-text-center">
-      <span>Agência <strong>0001 Conta 1213123-4</strong> </span>
-      <span>Banco <strong>202 - Nu Pagamentos S.A.</strong> </span>
-    <ion-item *ngFor="let option of options" >
+<ion-content color="primary" class="ion-padding">
+  <div class="ion-text-center">
+    <span><strong> Agência 0001 Conta 1213123-4</strong></span>
+    <span><strong> Banco 201 - Nu Pagamentos S.A.</strong></span>
+  </div>    
+  <ion-list lines="full" color="transparent" class="ion-text-center">
+    <ion-item *ngFor="let option of options" detail color="transparent">
       <ion-icon slot="start" [name]="option.icon"></ion-icon>
       <ion-label> {{option.text}} </ion-label>
     </ion-item>
   </ion-list>
+  <ion-button class="logout" expand="block" fill="outline" color="light">
+    SAIR DO APP
+  </ion-button>
 </ion-content>
