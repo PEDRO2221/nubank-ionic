@@ -1,5 +1,26 @@
-<ion-content>
-<ion-button (click)="ClosePagar()">
-  <ion-icon name="close-circle-outline"></ion-icon>
-</ion-button>
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary" class="ion-no-border">
+
+  </ion-toolbar>
+</ion-header>
+<ion-content class="conteudo ion-no-padding">
+  <div>
+    <ion-button slot="start" size="large" fill="fill" color="gray" (click)="ClosePagar()">
+      <ion-icon name="close-outline"></ion-icon>
+    </ion-button>
+  </div>
+  <ion-list lines="full" class="ion-text-center">
+    <ion-item detail>
+      <ion-icon slot="start" name="cash-outline"></ion-icon>
+      <ion-label><strong>Pagar com pix</strong><p>Leia o Qr Code ou cole o código</p></ion-label>
+    </ion-item>
+    <ion-item detail>
+      <ion-icon slot="start" name="card-outline"></ion-icon>
+      <ion-label><strong>Pagar fatura do cartão</strong><p>Libere o limite do seu Cartão de Crédito</p></ion-label>
+    </ion-item>
+    <ion-item detail>
+      <ion-icon slot="start" name="barcode-outline"></ion-icon>
+      <ion-label><strong>Pagar um Boleto</strong><p>Contas de luz, água etc...</p></ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

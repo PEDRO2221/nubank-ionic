@@ -1,0 +1,22 @@
+ion-content{
+    div{
+        ion-button{
+            height: 60px;
+            width: 60px;
+            border-radius: 100%;
+            }
+    }
+    ion-list{
+        ion-item{
+            margin-top: 25%;
+            margin-bottom: 25%;
+        ion-icon{
+            border-top: 25%;
+        }
+        ion-label{
+            border-bottom: 25%;
+        }
+        }
+    }
+   
+}
