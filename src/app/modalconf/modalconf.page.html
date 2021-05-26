@@ -9,7 +9,7 @@
   </ion-toolbar>
 </ion-header>
 <ion-content color="primary" class="ion-padding">
-  <div class="ion-text-center">
+  <div class="dados ion-text-center">
     <span><strong> Agência 0001 Conta 1213123-4</strong></span>
     <span><strong> Banco 201 - Nu Pagamentos S.A.</strong></span>
   </div>    
@@ -19,7 +19,10 @@
       <ion-label> {{option.text}} </ion-label>
     </ion-item>
   </ion-list>
-  <ion-button class="logout" expand="block" fill="outline" color="light">
-    SAIR DO APP
-  </ion-button>
+  <div class="ion-margin-vertical ion-text-center">
+    <ion-button fill="outline" color="light" slot="">
+      SAIR DO APP
+    </ion-button>
+  </div>
+ 
 </ion-content>

@@ -1,0 +1,44 @@
+ion-content{
+    div{
+        margin-bottom: 20%;
+        padding: 0px;
+        margin: 0px;
+        ion-item{
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+        ion-button{
+            margin: 0px;
+        }
+    }
+    }
+    div{
+        
+        ion-item{
+            ion-label{
+                font-size: 20px;
+            }
+        }
+        ion-label{
+            p{
+                font-size: 15px;
+                color: gray;
+            }
+            .valor{
+                font-size: 30px;
+            }
+        }
+    }
+}
+ion-footer{
+    ion-toolbar{
+        ion-button{
+            --detail-icon-opacity: 1;
+            height: 60px;
+            width: 60px;
+           border-radius: 100%;
+           display: inline;
+           background-color: rgb(139 139 139 / 73%);
+           }
+    }
+}

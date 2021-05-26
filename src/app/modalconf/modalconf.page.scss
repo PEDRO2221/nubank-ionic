@@ -18,6 +18,17 @@ ion-header{
     }
   }
   ion-content{
+    div{
+      align-items: center;
+      align-content: center;
+      margin-top: 20px;
+      ion-button{
+    }
+  }
+    .dados{
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
     span{
         display: block;
         margin: 5px 0;

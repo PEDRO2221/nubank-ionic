@@ -1,16 +1,35 @@
 <ion-header class="ion-no-border">
   <ion-toolbar color="primary" class="ion-no-border">
-
   </ion-toolbar>
 </ion-header>
-<ion-content class="conteudo ion-no-padding">
+<ion-content class="conteudo ion-padding ion-no-border">
   <div>
-    <ion-button slot="start" size="large" fill="fill" color="gray" (click)="CloseTransferir()">
-      <ion-icon name="close-outline"></ion-icon>
-    </ion-button>
+
+      <ion-item class="ion-no-padding ion-margin-vertical ion-no-border" lines="none">
+        <ion-button slot="start" size="large" fill="clear" color="gray" (click)="CloseTransferir()" class="ion-no-padding">
+          <ion-icon name="close-outline"></ion-icon>
+        </ion-button>
+        <ion-button slot="end" size="" fill="clear" color="gray" class="ion-no-padding ion-no-border">
+          <ion-icon name="qr-code-outline"></ion-icon>
+        </ion-button>
+      </ion-item>
+
   </div>
-  <div>
-    
-  </div>
-   
+  <div class="ion-margin-vertical ion-padding ion-text-left">
+  <ion-label class="ion-margin-vertical">
+    <strong class="valor">Qual o valor da trasferência ?</strong>
+      <p>Saldo disponivel na conta de <strong>$ 197,51</strong></p>
+  </ion-label>
+  <ion-item>
+    <ion-label position="floating">Valor</ion-label>
+    <ion-input type="number" ></ion-input>
+  </ion-item>
+</div>
 </ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar class="ion-no-border ion-padding">
+    <ion-button slot="end" size="" fill="clear" class="pagar ion-no-padding ion-no-border">
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
