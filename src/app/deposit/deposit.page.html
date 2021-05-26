@@ -5,12 +5,41 @@
 </ion-header>
 <ion-content class="conteudo ion-no-padding">
   <div>
-    <ion-button slot="start" size="large" fill="fill" color="gray" (click)="CloseDeposit()">
+    <ion-button slot="start" size="large" fill="clear" color="gray" (click)="CloseDeposit()">
       <ion-icon name="close-outline"></ion-icon>
     </ion-button>
   </div>
-  <div>
-    
+
+  <div class="ion-margin-vertical ion-padding">
+    <ion-label>
+      <strong>Como você quer depositar na sua conta Nubank ?</strong>
+    </ion-label>
+    <ion-list class="ion-text-center" lines="none">
+      <ion-item detail class="ion-margin-vertical">
+        <ion-icon slot="start" name="cash-outline"></ion-icon>
+        <ion-label><span>Pix</span>
+          <p>Sem custo e cai na hora, mesmo<br> de madrugada e fim de semana.</p>
+        </ion-label>
+      </ion-item>
+      <ion-item detail class="ion-margin-vertical" lines="none">
+        <ion-icon slot="start" name="cash-outline"></ion-icon>
+        <ion-label><span>Boleto</span>
+          <p>Sem custo e pode levar 3 dias úteis<br> para o dinheiro cair.</p>
+        </ion-label>
+      </ion-item>
+      <ion-item detail class="ion-margin-vertical" lines="none">
+        <ion-icon slot="start" name="card-outline"></ion-icon>
+        <ion-label><span>TED/DOC</span>
+          <p>Pode ter custo e cai somente em<br> um horário comercial de dias úteis.</p>
+        </ion-label>
+      </ion-item>
+      <ion-item detail class="ion-margin-vertical" lines="none">
+        <ion-icon slot="start" name="barcode-outline"></ion-icon>
+        <ion-label><span>Trazer seu salário</span>
+          <p>Receba todo mês direto aqui na<br> sua conta, sem custo.</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
   </div>
-   
+
 </ion-content>

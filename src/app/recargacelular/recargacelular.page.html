@@ -8,9 +8,24 @@
     <ion-button slot="start" size="large" fill="fill" color="gray" (click)="CloseRecarregar()">
       <ion-icon name="close-outline"></ion-icon>
     </ion-button>
+    <ion-progress-bar slot="icon-only"color="primary" value="0.3"></ion-progress-bar>
   </div>
-  <div>
-    
+    <div class="ion-margin-vertical ion-padding">
+      <ion-label>
+        <strong>Qual número você quer recarregar ?</strong>
+      </ion-label>
+      <ion-item lines="none">
+        <ion-label position="floating">Número</ion-label>
+        <ion-input placeholder="(DDD) 9 9999-9999" type="number"></ion-input>
+        <span>Repetir 88 9 9999-9999 <ion-icon name="arrow-up-outline" fill="clear" color="primary"></ion-icon> </span>
+      </ion-item>
   </div>
    
 </ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar class="ion-no-border ion-padding">
+    <ion-button slot="end" size="" fill="clear" class="pagar ion-no-padding ion-no-border">
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

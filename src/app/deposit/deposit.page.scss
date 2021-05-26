@@ -1,0 +1,22 @@
+div{
+    ion-label{
+        p{  
+            font-size: 15px;
+            color: gray;
+        }
+        span{
+            font-size: 25px;
+        }
+        strong{
+            font-size: 30px;
+            border-bottom: 10px;
+        }
+    }
+    ion-list{
+        ion-item{
+            ion-label{
+                margin-bottom: 16%;
+            }
+        }
+    }
+}

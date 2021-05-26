@@ -104,10 +104,10 @@ OpenTransferir(){
       break;
       case 7 : this.OpenRecarregar();
       break;
-      case 8 : this.OpenBloquear();
+      case 8 : this.OpenLimite();
       break;
-      case 9 : this.OpenLimite();
-      break;
+      case 9 : this.OpenBloquear();
+      break;   
       case 0 : this.OpenAjuda();
       break;
     }

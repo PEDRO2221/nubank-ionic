@@ -1,0 +1,33 @@
+ion-content{
+    div{
+        ion-label{
+            strong{
+                font-size: 30px;
+               
+            }
+        }
+        ion-item{
+            ion-label{
+                font-size: 20px;
+            }&ion-input{
+                font-size: 20px;
+            }
+            span{
+                color: #830ad1;
+            margin-top: 20px;
+            }
+        }
+}
+}
+ion-footer{
+    ion-toolbar{
+        ion-button{
+            --detail-icon-opacity: 1;
+            height: 60px;
+            width: 60px;
+           border-radius: 100%;
+           display: inline;
+           background-color: rgb(139 139 139 / 73%);
+           }
+    }
+}
