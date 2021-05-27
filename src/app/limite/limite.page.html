@@ -11,13 +11,25 @@
   </div>
   <div class="content ion-padding ion-text-center">
     <ion-item lines="none">
-      <ion-card-content  class="ion-no-padding ion-margin-vertical ion-text-center">
+      <ion-card-content class="ion-no-padding ion-margin-vertical ion-text-center">
         <div class="valor ion-padding">
-          <ion-input fill="outline" value="R$ 3000"></ion-input>    
+          <ion-input fill="outline" value="R$ 3000"></ion-input>
         </div>
       </ion-card-content>
-      
     </ion-item>
   </div>
-   
+  <div class="ion-text-center">
+    <span>R$ 2942,45 dísponvel para uso</span>
+  </div>
+  <div class="slidecontainer">
+    <ion-input type="range" min="0" max="3000" value="1500" class="slider" id="myRange"></ion-input>
+  </div>
+
 </ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar class="ion-no-border ion-padding">
+    <ion-button slot="" size="" fill="fill" class="">
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
